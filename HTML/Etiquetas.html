@@ -8,6 +8,10 @@
     <meta charset="UTF-8"> <!-- caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
     <title>Document</title> <!-- Titulo de pagina (se muestra en la pestaña del navegador)-->
+    
+    <!-- Linkear (unir) una hoja de CSS para que afecte este HTML -->
+    <link rel="stylesheet" href="nombre-archivo.css">
+    
 </head>
 
 <body> <!-- Cuerpo de la pagina web, todo el contenido que se muestra (renderiza )-->
@@ -27,7 +31,10 @@
     <strong></strong> <!-- Como <b> pero con semámtica (significado) -->
     <sup></sup> <!-- Superindice -->
     <sub></sub> <!-- Subindice -->
-    <a href="https://sitioweb.com"></a> <!-- Link a otra pagina web -->
+
+    <!-- Links (etiqueta anchor <a>)-->
+    <a href="https://sitioweb.com"> texto del link </a> <!-- Link a otra pagina web -->
+    <a href="https://sitioweb.com" target="_blank">  texto del link </a> <!-- Link a otra pagina web que se abre en una nuva pestaña-->
 
     <!-- Espaciado entre elementos -->
     <br> <!-- Salto de linea (enter) -->
@@ -69,6 +76,11 @@
         </tr>
     </table>
 
+    <!-- Link con autoscroll a una etiqueta HTML -->
+    <a href="#identificador">ir a parrafo</a>
+    <!-- Parrafo con un id (se puede agregar a cualquier etiqueta HTML) -->
+    <p id="identificador">Parrafo con identificador</p>
+    
 </body>
 
 </html>
