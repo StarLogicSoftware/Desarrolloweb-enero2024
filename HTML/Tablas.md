@@ -95,3 +95,105 @@ Las tablas en HTML son elementos que permiten organizar y mostrar datos de maner
 </body>
 </html>
 ```
+*Propiedades de CSS comunes en tablas*
+
+1. **border-collapse**: Esta propiedad determina si las celdas de la tabla comparten bordes o tienen bordes separados.
+
+```css
+table {
+    border-collapse: collapse;
+}
+```
+
+2. **border**: Esta propiedad establece el ancho, el estilo y el color del borde de las celdas de la tabla.
+
+```css
+th, td {
+    border: 1px solid black;
+}
+```
+
+3. **background-color**: Esta propiedad establece el color de fondo de las celdas de la tabla.
+
+```css
+th {
+    background-color: #f2f2f2;
+}
+```
+
+4. **text-align**: Esta propiedad alinea el texto dentro de las celdas de la tabla.
+
+```css
+th, td {
+    text-align: center;
+}
+```
+
+5. **padding**: Esta propiedad establece el espacio entre el contenido y el borde de las celdas de la tabla.
+
+```css
+th, td {
+    padding: 8px;
+}
+```
+
+6. **font-weight**: Esta propiedad establece el peso de la fuente dentro de las celdas de la tabla.
+
+```css
+th {
+    font-weight: bold;
+}
+```
+
+**Ejemplo de un codigo CSS aplicado a una tabla**:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilizado de Tabla con CSS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de Estilizado de Tabla con CSS</h2>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>25</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>María</td>
+            <td>30</td>
+            <td>Barcelona</td>
+        </tr>
+        <tr>
+            <td>Pablo</td>
+            <td>35</td>
+            <td>Sevilla</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
